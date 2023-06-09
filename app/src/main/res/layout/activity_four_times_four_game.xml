@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FourTimesFourGameActivity">
+
+    <ImageView
+        android:id="@+id/imageViewFourTimesFourBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <ImageView
+        android:id="@+id/imageViewFourTimesFourRetry"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_refresh" />
+
+    <TextView
+        android:id="@+id/textViewFourTimesFourGameTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fieldFourTimesFour" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fieldFourTimesFour"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:background="@drawable/four_times_four_field"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldFirst"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldSecond"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewFourFieldFirst"/>
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldThird"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewFourFieldSecond"/>
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldFourth"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewFourFieldThird"/>
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldFifth"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@id/imageViewFourFieldFirst"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldSixth"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@id/imageViewFourFieldSecond"
+            app:layout_constraintStart_toEndOf="@id/imageViewFourFieldFifth" />
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldSeventh"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@id/imageViewFourFieldThird"
+            app:layout_constraintStart_toEndOf="@id/imageViewFourFieldSixth"/>
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldEighth"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@id/imageViewFourFieldFourth"
+            app:layout_constraintStart_toEndOf="@id/imageViewFourFieldSeventh" />
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldNinth"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@id/imageViewFourFieldFifth"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldTenth"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@id/imageViewFourFieldSixth"
+            app:layout_constraintStart_toEndOf="@id/imageViewFourFieldNinth"/>
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldEleventh"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@id/imageViewFourFieldSeventh"
+            app:layout_constraintStart_toEndOf="@id/imageViewFourFieldTenth" />
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldTwelfth"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@id/imageViewFourFieldEighth"
+            app:layout_constraintStart_toEndOf="@id/imageViewFourFieldEleventh" />
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldThirteenth"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@id/imageViewFourFieldNinth"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldFourteenth"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@id/imageViewFourFieldTenth"
+            app:layout_constraintStart_toEndOf="@id/imageViewFourFieldThirteenth" />
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldFifteenth"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@id/imageViewFourFieldEleventh"
+            app:layout_constraintStart_toEndOf="@id/imageViewFourFieldFourteenth" />
+
+        <ImageView
+            android:id="@+id/imageViewFourFieldSixteenth"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@id/imageViewFourFieldTwelfth"
+            app:layout_constraintStart_toEndOf="@id/imageViewFourFieldFifteenth" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="author">Куманцов Максим РИБО-01-21</string>
+    <string name="authorization">Авторизация</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="login_button">Войти</string>
+    <string name="_3x3">3x3</string>
+    <string name="_4x4">4x4</string>
+    <string name="field_size">Размер поля:</string>
+    <string name="start_game">Начать игру</string>
+    <string name="second_player_hint">2-й игрок</string>
+    <string name="first_player_hint">1-й игрок</string>
+    <string name="second_player_name">Имя 2-го игрока:</string>
+    <string name="first_player_name">Имя 1-го игрока:</string>
+    <string-array name="field_sizes">
+        <item>3x3</item>
+        <item>4x4</item>
+    </string-array>
+</resources>
